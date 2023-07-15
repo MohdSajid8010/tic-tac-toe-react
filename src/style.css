@@ -1,0 +1,162 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.app {
+    /* border: 2px solid red; */
+}
+
+.header {
+    color: white;
+    background-color: darkblue;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+}
+
+.board-cont {
+    /* border: 3px solid rgb(171, 226, 43); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.btn-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 300px;
+}
+
+.left {
+    /* border: 3px solid blueviolet; */
+
+}
+
+.right {
+    /* border: 3px solid blueviolet; */
+
+}
+
+.btn-cont button {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: 1px solid darkblue;
+}
+
+.X {
+    background-color: dodgerblue;
+
+}
+
+.Y {
+    background-color: darkorange;
+
+}
+
+.turn {
+    width: 300px;
+    padding: 10px 5px;
+    /* border: 2px solid blue; */
+}
+.turn .X{
+    background-color: white;
+    color: dodgerblue;
+}
+.turn .Y{
+    background-color: white;
+    color: darkorange ;
+}
+.btn {
+    padding: 10px 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn2 {
+    background-color: darkblue;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: rgb(221, 5, 5);
+}
+
+.btn1:hover {
+    background-color: rgb(85, 84, 84);
+}
+
+.btn-cont2 {
+    display: flex;
+    gap: 20px;
+}
+
+.score {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid darkblue;
+    padding: 10px;
+}
+.win{
+    color: green;
+
+}
+/* .score h2:first-of-type{
+    color: orange;
+} */
+.score h2:first-of-type{
+    color: dodgerblue;
+}
+.score h2:nth-child(3){
+    color: darkorange;
+}
+@media (max-width:550px) {
+
+    .board-cont {
+        /* border: 3px solid rgb(171, 226, 43); */
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 60px;
+
+    }
+
+    .score {
+        flex-flow: column wrap;
+        width: 90vw;
+        justify-content: center;
+        border: 2px solid darkblue;
+    }
+
+}
+.turn h1{
+    text-align: center;
+}
+/* 
+@media (max-width:320px) {
+
+    .btn-cont {
+        width: 90vw;
+    }
+
+    .turn {
+        width: 90vw;
+    }
+
+} */
